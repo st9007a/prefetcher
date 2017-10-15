@@ -4,7 +4,7 @@ GIT_HOOKS := .git/hooks/applied
 
 SRC = main.c
 
-EXEC = navie_transpose \
+EXEC = naive_transpose \
 	  sse_transpose \
 	  sse_prefetch_transpose \
 	  avx_transpose \
@@ -32,4 +32,4 @@ $(GIT_HOOKS):
 	@echo
 
 clean:
-	$(RM) main
+	$(RM) $(EXEC)
