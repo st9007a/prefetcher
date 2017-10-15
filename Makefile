@@ -7,7 +7,8 @@ SRC = main.c
 EXEC = navie_transpose \
 	  sse_transpose \
 	  sse_prefetch_transpose \
-	  avx_transpose
+	  avx_transpose \
+	  avx_prefetch_transpose
 
 all: $(GIT_HOOKS) $(EXEC)
 
